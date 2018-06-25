@@ -51,7 +51,6 @@ defmodule Ctex.MixProject do
       maintainers: ["Sean Cribbs", "Zeeshan Lakhani"],
       files: ["lib", "README*", "mix.exs", "CONTRIBUTING", "NOTICE", "LICENSE"],
       links: %{
-        # TODO: Update this link
         "Github" => "https://github.com/Comcast/ctex"
       }
     ]
