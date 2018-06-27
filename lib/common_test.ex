@@ -12,26 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# The directory Mix will write compiled artifacts to.
-/_build/
+defmodule CommonTest do
+  @moduledoc "Elixir integration for common_test suites."
 
-# If you run "mix test --cover", coverage assets end up here.
-/cover/
+  @type config() :: Keyword.t()
 
-# The directory Mix downloads your dependencies sources to.
-/deps/
-
-# Where 3rd-party dependencies like ExDoc output generated docs.
-/doc/
-
-# Ignore .fetch files in case you like to edit your project deps locally.
-/.fetch
-
-# If the VM crashes, it generates a dump, let's ignore it too.
-erl_crash.dump
-
-# Also ignore archive artifacts (built via "mix archive.build").
-*.ez
-
-# Ignore package tarball (built via "mix hex.build").
-ctex-*.tar
+  defmacro __using__(_opts) do
+    quote do
+      import CommonTest.Suite
+      import CommonTest.Wait
+      import CommonTest.Cluster
+      import CommonTest.Network
+    end
+  end
+end
