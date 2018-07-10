@@ -53,4 +53,3 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 This product includes software developed at Comcast (http://www.comcast.com/).
->>>>>>> cd4ed2d... Initial commit
