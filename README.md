@@ -4,7 +4,7 @@ A mix task for running `common_test` suites.
 
 ## Installation
 
-`ctex` is available for installation from [Hex](). The package can be installed
+`ctex` is available for installation from [Hex](https://hexdocs.pm/ctex/). The package can be installed
 by adding `ctex` to your list of dependencies in `mix.exs`:
 
 ```elixir
